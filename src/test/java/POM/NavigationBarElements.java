@@ -18,9 +18,22 @@ public class NavigationBarElements extends BasePOM{
     @FindBy(xpath = "(//span[contains(text(),'Countries')])[1]")
     private WebElement clickCountry;
 
+    @FindBy(xpath = "//span[text()='Citizenships']/..")
+    private WebElement citizenshipButton;
+
+
     public void userOnCountriesPage(){
         clickSetup.click();
         clickParameter.click();
         clickCountry.click();
+
     }
+
+    public void userNavigateCitizenshipPage(){
+        clickSetup.click();
+        clickParameter.click();
+        citizenshipButton.click();
+
+    }
+
 }
