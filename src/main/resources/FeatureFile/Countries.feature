@@ -14,7 +14,7 @@ Feature: Countries Functionality
       When   User enter admin credentials
       Then  User should login successfully
       When  User edit Country
-      Then  Success Message should be displayed
+      Then  Success message should be displayed
 
 
       Scenario: Delete Country
